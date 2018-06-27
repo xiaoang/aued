@@ -1,0 +1,243 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=11,IE=10,IE=9,IE=8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0")
+    meta(http-equiv="Cache-Control", content="no-siteapp")
+    meta(name="keywords", content="前端开发,前端技术经验交流,前端人员招聘,逍遥云游,aued.cn,js,css,html教程")
+    meta(name="description", content="aued是一个关注前端开发、用户体验设计、的交流平台。")
+    title 一个前端资源与经验共享平台-我是ued
+    link(rel="shortcut icon", href="http://www.aued.cn/favicon.ico")
+    link#da-bootstrap-css(rel="stylesheet", href="/stylesheets/bootstrap.css", type="text/css", media="all")
+    link#da-main-css(rel="stylesheet", href="/stylesheets/main.css", type="text/css", media="all")
+  body.home.blog
+    header.header
+      .container
+        h1.logo
+          a(href="http://www.aued.cn", title="aued_关注前端开发和wordpress主题的博客")
+            img(src="/images/logo.png", width="110")
+        |         
+        .brand
+          | 程序猿最爱
+          br
+          |             前端技术乐园
+        |         
+        ul.site-nav.site-navbar
+          li.navto-home.active
+            a(href="http://www.aued.cn") 首页
+          |             
+          li.navto-wp
+            a(href="http://www.aued.cn") 前端资讯
+          |             
+          li.navto-front
+            a(href="http://www.aued.cn/front")
+              | 前端开发 
+              i.fa.fa-angle-down
+            |                 
+            ul.sub-menu
+              li.navto-htmlcss
+                a(href="http://www.aued.cn/front/htmlcss") HTML/CSS
+              |                     
+              li.navto-javascript
+                a(href="http://www.aued.cn/front/javascript") Javascript
+              |                     
+              li.navto-news
+                a(href="http://www.aued.cn/front/news") 技术前沿
+              |                     
+              li.navto-resource
+                a(href="http://www.aued.cn/front/resource") 技巧资源
+          |             
+          li.navto-see
+            a(href="http://www.aued.cn/see") 观点
+          |             
+          li.navto-job
+            a(href="http://www.aued.cn/job") 前端开发招聘
+          |             
+          li.navto-nav
+            a(href="http://www.aued.cn/nav") 前端导航
+          |             
+          li.navto-search
+            a.search-show.active(href="javascript:;")
+              i.fa.fa-search
+        |         
+        .topbar
+          ul.site-nav.topmenu
+            li
+              a.red(target="_blank", href="http://www.75team.com/")
+                i.fa.fa-thumbs-o-up
+                |  推荐：行业先行者，奇舞知识库
+            |                 
+            li
+              a(href="http://www.aued.cn/tools") 前端工具箱
+            |                 
+            li
+              a(href="http://www.aued.cn/links") 友情链接
+            |                 
+            li
+              a(href="http://www.aued.cn/contact") 留言联系
+            |                 
+            li
+              a(href="http://www.aued.cn/ads") 广告合作
+            |                 
+            li
+              a(href="http://www.aued.cn/about")
+                | 关注aued 
+                i.fa.fa-angle-down
+              |                     
+              ul.sub-menu
+                li
+                  a(target="_blank", rel="external nofollow", href="http://weibo.com/daqianduan")
+                    i.fa.fa-weibo
+                    |  微博
+                |                         
+                li
+                  a(target="_blank", rel="external nofollow", href="http://t.qq.com/daqianduan")
+                    i.fa.fa-tencent-weibo
+                    |  腾讯微博
+                |                         
+                li
+                  a(target="_blank", rel="external nofollow", href="http://www.aued.cn/go/feedmail")
+                    i.fa.fa-envelope-o
+                    |  邮件订阅更新
+                |                         
+                li
+                  a(target="_blank", href="http://www.aued.cn/feed")
+                    i.fa.fa-rss
+                    |  RSS订阅
+        |         
+        i.fa.fa-bars.m-icon-nav
+    .site-search
+      .container
+        form.site-search-form(method="get", action="http://www.daqianduan.com/")
+          input.search-input(name="s", type="text", placeholder="输入关键字搜索")
+          |             
+          button.search-btn(type="submit")
+            i.fa.fa-search
+    section.container
+      .content-wrap
+        #content.content
+          block content
+      |     
+      aside.sidebar
+        .widget.widget_ui_textads
+          a.style02(href="mailto:xiaoang666@163.com", target="_blank")
+            strong 域名转让
+            |             
+            h2 多个爆款域名，有适合您的吗
+            |             
+            p uvww.cn、aitu.mobi、avww.cn、uepay.cn，域名独具含义，是你品牌推广，形象提升必不可少的标示
+        |         
+        .widget.widget_ui_textads
+          a.style01(href="http://www.aued.cn/contact", target="_blank")
+            strong 联系我
+            |             
+            h2 aued站主
+            |             
+            p
+              | 前端程序猿我的QQ：273129779，欢迎大家关注！ 
+              br
+              |                 
+              br
+              |                 
+              img(border="0", src="http://pub.idqqimg.com/wpa/images/group.png", alt="aued-主群", title="")
+        |         
+        .widget.widget_ui_ads
+          .item
+            a(href="http://www.aued.cn", target="_blank")
+              img(src="/images/better.gif")
+        |         
+        .widget.widget_ui_ads
+          .item
+            a(href="http://www.aued.cn/go/aliyun-m", target="_blank")
+              img(src="/images/aliyun.jpg")
+        |         
+        .widget.widget_ui_fronts
+          h3 前端开发
+          |             
+          ul.ebox
+            li.ebox-i.ebox-01
+              h4 前端网址导航
+              |                     
+              p 扁平化设计、自定义颜色风格、多功能配置
+              |                     
+              a.btn.btn-default.btn-sm(target="_blank", href="http://www.aued.cn/nav") 立即使用
+            |                 
+            li.ebox-i.ebox-02
+              h4 产品-交互-设计
+              |                     
+              p 展示各种精彩炫酷的网站设计和用户体验良好的设计元素
+              |                     
+              a.btn.btn-default.btn-sm(target="_blank", href="http://www.aued.cn/design") 开始学习
+            |                 
+            li.ebox-i.ebox-03
+              h4 名企招聘
+              |                     
+              p 名企前端招聘大集合，有能量就释放出来吧
+              |                     
+              a.btn.btn-default.btn-sm(target="_blank", href="http://www.aued.cn/job") 查看职位
+            |                 
+            li.ebox-i.ebox-04
+              h4 Sublime Text 3
+              |                     
+              p 前端开发利器，全套快捷键和插件推荐
+              |                     
+              a.btn.btn-default.btn-sm(target="_blank", href="http://www.aued.cn/4820.html") 开始使用
+            |                 
+            li.ebox-i.ebox-05.ebox-100
+              h4 前端开发工具箱
+              |                     
+              p
+                a(target="_blank", href="http://www.aued.cn/tools?t=js") JS压缩/加密/格式化
+                |  | 
+                a(target="_blank", href="http://www.aued.cn/tools?t=css") CSS压缩/格式化
+                |  | 
+                a(target="_blank", href="http://www.aued.cn/tools?t=highlight") 在线代码高亮
+              |                     
+              a.btn.btn-default.btn-sm(target="_blank", href="http://www.aued.cn/tools") 立即使用
+        |         
+        .widget.widget_ui_tags
+          h3 标签云
+          |             
+          .items
+            a(href="http://www.aued.cn/tag/front-skills") 前端技巧 (61)
+            a(href="http://www.aued.cn/tag/css") CSS (52)
+            a(href="http://www.aued.cn/tag/javascript") JavaScript (50)
+            a(href="http://www.aued.cn/tag/user-experience") 用户体验 (46)
+            a(href="http://www.aued.cn/tag/design-ideas") 设计思路 (43)
+            a(href="http://www.aued.cn/tag/html5") HTML5 (40)
+            a(href="http://www.aued.cn/tag/seo") SEO (40)
+            a(href="http://www.aued.cn/tag/website-design") 网页设计 (40)
+            a(href="http://www.aued.cn/tag/css3") CSS3 (37)
+            a(href="http://www.aued.cn/tag/professional") 职业 (34)
+            a(href="http://www.aued.cn/tag/front-resources") 前端资源 (33)
+            a(href="http://www.aued.cn/tag/daqianduan") aued (31)
+            a(href="http://www.aued.cn/tag/company") 企业公司 (30)
+            a(href="http://www.aued.cn/tag/browser") 浏览器 (28)
+            a(href="http://www.aued.cn/tag/adsense-necessary") 站长必备 (27)
+            a(href="http://www.aued.cn/tag/jquery") jQuery (22)
+            a(href="http://www.aued.cn/tag/search-optimization") 搜索引擎优化 (22)
+            a(href="http://www.aued.cn/tag/compatible") 兼容 (17)
+            a(href="http://www.aued.cn/tag/html") HTML (16)
+            a(href="http://www.aued.cn/tag/web-development") web开发 (16)
+            a(href="http://www.aued.cn/tag/web-standards") web标准 (16)
+            a(href="http://www.aued.cn/tag/google") Google (15)
+            a(href="http://www.aued.cn/tag/ie9") IE9 (15)
+            a(href="http://www.aued.cn/tag/front-tools") 前端工具 (15)
+            a(href="http://www.aued.cn/tag/haozi") 浩子 (15)
+            a(href="http://www.aued.cn/tag/ie6") IE6 (12)
+            a(href="http://www.aued.cn/tag/announcement") 网站公告 (12)
+            a(href="http://www.aued.cn/tag/css3-explain") CSS3详解 (11)
+            a(href="http://www.aued.cn/tag/wordpress") wordpress (10)
+            a(href="http://www.aued.cn/tag/search-engine") 搜索引擎 (10)
+        |         
+        .widget.widget_ui_ads
+          .item
+            a(href="http://www.aued.cn", target="_blank")
+              img(src="/images/contact.gif")
+    footer.footer
+      .container
+        p
+          | Copyright©
+          a(href="http://www.aued.cn") aued
+          |  All Rights Reserved. 京ICP备15052054号

@@ -1,0 +1,73 @@
+extends layout
+
+block content
+    #homeslider.carousel.slide(data-ride="carousel")
+      .carousel-inner(role="listbox")
+        .item.active
+          a(target="_blank", href="http://aued.cn/xiu")
+            img(src="/images/hs-nav.jpg", alt="xiu主题")
+    article.excerpt-see.excerpt-see-index
+      h2
+        a.red(href="http://e.360.cn", target="_blank") 【前端招聘】
+        a(href="http://e.360.cn", target="_blank", title="360广告技术部招聘前端开发工程师（北京）aued") 360广告技术部招聘前端开发工程师（北京）
+      p.note
+        | 360点睛实效平台是基于360导航，好搜等产品的推广营销平台。是360广告技术部最重要的商业化平台，点睛前端团队承载了平台最重要的变现功能。在这里，你将同
+        a(href="http://www.75team.com/", target="_blank") 奇舞团
+        | 的众多前端大牛们一起激扬代码，一较高下。
+    .title
+      h3 最新发布
+    -var jobs = articles.data
+    each article in jobs
+        article.excerpt
+          header
+            a.cat(href=`${article.linkUrl}`)
+              | 前端技术
+              i
+            h2
+              a(href=`${article.linkUrl}`) !{article.title}
+          p.meta
+            time
+              i.fa.fa-clock-o
+              | !{article.pubDate}
+            span.pv
+              i.fa.fa-eye
+              | 作者(!{article.author})
+            span.pc
+              i.fa.fa-comments-o
+              | 原文(
+              span.cy_cmt_count #{article.fromUrl}
+              | )
+            -var art = article.des.replace(/(\/post[^.]+\.html)/,'http://75team.com'+'$1');
+            .note!= art
+    .pagination.page-bar
+      ul
+        -var cur = ps,pagesize=pn,count=pagenum;
+        if cur > 1
+            li.prev-page
+              a(href=`/?ps=1`) 首页
+            li.prev-page
+              a(href=`/?ps=${cur-1}`) 上一页
+            if cur > 5
+                li
+                  a(href=`/?ps=${cur-3}`) #{cur-3}
+                li
+                  a(href=`/?ps=${cur-2}`) #{cur-2}
+            li
+              a(href=`/?ps=${cur-1}`) #{cur-1}
+        li.active
+          a #{cur}
+        if cur < count
+            li
+              a(href=`/?ps=${cur+1}`) #{cur+1}
+            if cur < (count -3)
+                li
+                  a(href=`/?ps=${cur+2}`) #{cur+2}
+                li
+                  a(href=`/?ps=${cur+3}`) #{cur+3}
+            li.next-page
+              a(href=`/?ps=${cur+1}`) 下一页
+            li
+              a(href=`/?ps=${count}`) 尾页
+        li
+          a
+            | 共#{count}页

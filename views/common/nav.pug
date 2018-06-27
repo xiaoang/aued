@@ -1,0 +1,18 @@
+.pagination.page-bar
+  ul
+    -var ps = ps,pn=pn,count=count;
+    li.prev-page
+      a 上一页
+    li
+      a #{ps-1}
+    li.active
+      a #{ps}
+    li
+      a #{ps+1}
+    li.next-page
+      a 下一页
+    li
+      a
+        | 共
+        i #{count}
+        | 页
