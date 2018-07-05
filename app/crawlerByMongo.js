@@ -6,7 +6,7 @@ var http = require('http'),
     pageUrls = [],
     pageNum = 16;
 for(var i = 1; i <= pageNum; i++){
-    pageUrls.push('http://www.75team.com/post/?page='+i)
+    pageUrls.push('http://********************/?page='+i)
 }
 mongoose.connect(mongourl);
 var Schema = mongoose.Schema;
