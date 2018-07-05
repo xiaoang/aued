@@ -31,7 +31,7 @@ pageUrls.forEach(function(pageUrl){
         for(var i = 0;i < articles.length; i++){
             //var articalUrl = quoteUrls.eq(i).attr("href");
             var title = articles.eq(i).children('h1.title').children('a').html(),
-                linkUrl = 'http://www.75team.com' + articles.eq(i).children('h1.title').children('a').attr('href'),
+                linkUrl = 'http://www.****.com' + articles.eq(i).children('h1.title').children('a').attr('href'),
                 descont = articles.eq(i).children('.entry-content'),
                 fromUrl = descont.find('a').attr('href'),
                 author = articles.eq(i).find('span.author').html(),
